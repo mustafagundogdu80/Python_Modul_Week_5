@@ -24,9 +24,14 @@ class account(Customer):
             print(f" {amount} Withdrew. New balance: {self.balance}")
     def display_balance(self):
         print(f"Account Balance: {self.balance}")
-account = Account("Yasin", "Sinan", "12345678901", "+312583693", "123456789", 1500)
-print(account)
-
+customer1 = Customer("Yasin", "Sinan", "12345678901", "+312583693")
+account1 = Account("Yasin", "Sinan", "12345678901", "+312583693", "123456789", 1500)
+customer1.display_information()
+account1.display_balance()
+account1.deposit(200)      
+account1.money_check(100)  
+account1.money_check(700)   
+account1.display_balance() 
 
         
     
