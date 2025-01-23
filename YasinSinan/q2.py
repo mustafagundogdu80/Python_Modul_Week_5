@@ -1,9 +1,9 @@
 class School:
-  def __init__(self, name, foundation_year):
-    self.name=name
-    self.foundation_year=foundation_year
-    self.students=[]
-    self.teachers=[]
+    def __init__(self, name, foundation_year):
+        self.name=name
+        self.foundation_year=foundation_year
+        self.students=[]
+        self.teachers=[]
 
     def add_new_student(self, student_name, student_class):
         new_student = {'name': student_name,'class': student_class}
@@ -29,8 +29,3 @@ school.add_new_teacher("Yunus", "OOP")
 school.add_new_teacher("Yavuz", "Music")
 school.view_student_list()
 school.view_teacher_list()
-
-
-
-
-
