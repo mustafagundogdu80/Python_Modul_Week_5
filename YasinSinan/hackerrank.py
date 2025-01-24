@@ -1,6 +1,3 @@
-"""
-Inheritance: https://www.hackerrank.com/challenges/inheritance/problem
-"""
 class person:
     def __init__(self, first_name, last_name, id):
         self.first_name=first_name
@@ -10,7 +7,7 @@ class person:
         print (f"first name:",self.first_name, "last_name: ", self.last_name, "id:" ,self.id)
 class student(person):
     def __init__(self, first_name, last_name, id, scores):
-        super().__init__(self, first_name, last_name, id)
+        super().__init__(first_name, last_name, id)
         self.scores=scores
     def info(self):
         print (f"first name:",self.first_name, "last_name: ", self.last_name, "id:" ,self.id,"scores",self.scores )
@@ -32,9 +29,5 @@ class student(person):
             return "score is invalid"
 student = student("Yasin", "Sinan", 12345, [95, 85, 80, 70])
 print (student)
-print (f"self.first_name :{first_name}, self.last_name: {last_name},  self.id: {id}\n ,self.scores:{scores}\n, self.scores sep=")
-"""--------------------------------------------------------------------"""
-
-"""
-Classes: Dealing with Complex Numbers: https://www.hackerrank.com/challenges/class-1-dealing-with-complex-numbers/problem
-"""
+print (f"self.first_name :{student.first_name}, self.last_name: {student.last_name},  self.id: {student.id}\n self.scores:{student.scores}\n")
+print (student.calculate())
