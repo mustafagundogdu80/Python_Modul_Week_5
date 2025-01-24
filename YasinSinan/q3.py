@@ -9,7 +9,7 @@ class Rectangle(Shape):
 
 class Square(Shape):
     def calculate_area(self):
-        return self.width * self.width
+        return self.width * self.height
 
 rectangle = Rectangle(4, 5)
 square = Square(3, 3)
