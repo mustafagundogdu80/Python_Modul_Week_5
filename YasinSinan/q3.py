@@ -1,3 +1,8 @@
+class Shape:
+    def __init__(self, width, height):
+        self.width = width
+        self.height = height
+
 class Rectangle(Shape):
     def calculate_area(self):
         return self.width * self.height
